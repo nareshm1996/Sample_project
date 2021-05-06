@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    
+    - name: execute hello world py
+      command: python3 jenkins.py
