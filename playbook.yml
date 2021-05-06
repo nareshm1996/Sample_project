@@ -9,4 +9,4 @@
       register: output
 
     - debug: 
-       msg: "{{ extra_vars_key }}"
+       msg: "{{ output }}"
