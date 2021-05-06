@@ -1,6 +1,11 @@
 ---
-- hosts: all
-  tasks:
-    
-    - name: execute hello world py
-      command: python3 jenkins.py
+  - name: "Execute jenkins.py"
+    hosts: localhost
+    connection: local
+    tasks:
+
+    - name: "Execute python file"
+      command: python3 helloworld.py
+      register: output
+
+    - debug: var=output.stdout_lines
