@@ -7,8 +7,5 @@
     - name: "Execute python file"
       command: python3 helloworld.py
       register: output
-    
-    - debug:
-       msg: "Hello world from"
 
     - debug: var=output.stdout_lines
