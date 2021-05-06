@@ -8,5 +8,5 @@
       command: python3 helloworld.py
       register: output
 
-    - debug: var=output.stdout_lines
+    - debug: 
        msg: "{{ extra_vars_key }}"
