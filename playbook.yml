@@ -9,6 +9,6 @@
       register: output
     
     - debug:
-       msg: "Hello world from {{ Ext_Var }}"
+       msg: "Hello world from {{  }}"
 
     - debug: var=output.stdout_lines
